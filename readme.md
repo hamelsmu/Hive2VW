@@ -5,7 +5,11 @@
 - [Micahel Musson](https://www.linkedin.com/in/michael-m-a37b1932/) `michael.musson@gmail.com`
 - [Hamel Husain](https://www.linkedin.com/in/hamelhusain/) `hamel.husain@gmail.com`
 
-Convenience function that transforms a hive table into a format that can be ingested directly by [Vowpal Wabbit](https://github.com/JohnLangford/vowpal_wabbit/wiki/Tutorial).  
+**Hive2VW** is a python interface that generates dynamic [HiveQL](https://cwiki.apache.org/confluence/display/Hive/LanguageManual) Queries that format data in Hive Tables into a format readable by [Vowpal Wabbit](https://github.com/JohnLangford/vowpal_wabbit/wiki/Tutorial).  Hive2VW provides convenience functions that will do the following:
+
+- Inspect table schema for numeric vs. categorical data types and format those appropriately
+- Accept namespace to column mappings
+- Optionally generate the SQL string or execute SQL directly.  
 
 Background:
 
